@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #060125; /* Dark navy background */
+  margin: 0;
+  min-height: 100vh;
+
+  overflow-x: hidden; /* Only prevent horizontal scroll */
+}
+
+.background-circle {
+  position: fixed;
+  border-radius: 50%;
+  border: 100px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
+  z-index: 0; /* Ensure circles stay behind content */
+  pointer-events: none; /* This prevents circles from intercepting clicks */
+}
+
+.circle-1 {
+  width: 1100px;
+  height: 1100px;
+  top: -600px;
+  right: -400px;
+}
+
+.circle-2 {
+  width: 1100px;
+  height: 1100px;
+  bottom: -600px;
+  left: -350px;
+/* Artboard 213 1 */
+
+}
+
+/* Ensure content stays above circles */
+.App {
+  position: relative;
+  z-index: 1;
+}
+
+/* Calendar custom styles */
+.react-calendar {
+  width: 100% !important;
+  max-width: 900px !important;
+  background: transparent !important;
+  border: none !important;
+  font-family: inherit !important;
+  font-size: 1.1em !important;
+}
+
+.react-calendar__tile {
+  color: white !important;
+  padding: 1.5em 0.5em !important; /* Reduced from 2em */
+  height: 70px !important; /* Reduced from 100px */
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus,
+.react-calendar__tile--active {
+  background: #D4AF37 !important;
+  border-radius: 8px;
+}
+
+.react-calendar__tile--now {
+  background: rgba(212, 175, 55, 0.2) !important;
+  border-radius: 8px;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  color: #D4AF37 !important;
+  text-decoration: none !important;
+  padding: 0.7em !important; /* Reduced from 1em */
+  font-size: 1.2em !important;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none !important;
+}
+
+.react-calendar__navigation {
+  height: 50px !important; /* Reduced from 60px */
+  margin-bottom: 15px !important; /* Reduced from 20px */
+}
+
+.react-calendar__navigation button {
+  color: white !important;
+  min-width: 60px !important; /* Increased min-width */
+  font-size: 1.5em !important; /* Increased font size */
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px;
+}
+
+.has-events {
+  font-weight: bold !important;
+  color: #D4AF37 !important;
+  font-size: 1.1em !important; /* Increased font size */
+}
+
+.react-calendar__tile:disabled {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Make event dots bigger */
+.react-calendar__tile-content .flex-col .flex {
+  margin-top: 8px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .react-calendar {
+    font-size: 0.9em !important;
+  }
+  
+  .react-calendar__tile {
+    padding: 1.2em 0.5em !important; /* Reduced from 1.5em */
+    height: 60px !important; /* Reduced from 80px */
+  }
+  
+  .react-calendar__navigation {
+    height: 40px !important; /* Reduced from 50px */
+  }
+}
+
+/* Swiper custom styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.5);
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #D4AF37 !important;
+}
+
+/* Hide navigation on mobile */
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+/* Navbar should always be on top */
+header, 
+.navbar {
+  position: relative;
+  z-index: 1000 !important; /* Ensure navbar stays on top */
+}
+
+.file-section button{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+
+.carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+button{
+  cursor: pointer;
+}
+.file-section button{
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
