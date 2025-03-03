@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ArrowLeft, Pencil, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import { courts } from "./utils";
 
 function Cases() {
 
@@ -39,27 +40,30 @@ function Cases() {
                   <div className="mb-4">
                     <label className="block mb-2">Court Name/ID</label>
                     <select
-                    value={courtcode}
-                    onChange={(e)=>{setCourtcode(e.target.value)}}
+                    onChange={(e)=>{setStateCode(e.target.value)}}
                       name="CourtName"
                       className="bg-[#060125] text-[#676767] p-2 rounded w-full"
                     >
                       <option>Choose Court</option>
-                      <option>Pending</option>
-                      <option>Disposed</option>
+                      {courts.map((option, optionIndex)=>{
+                        return(
+                            <option value={option.StateCode}>{option.Name}</option>
+                        )
+                      })}
                     </select>
                   </div>
                   <div className="mb-4">
                     <label className="block mb-2">Bench Name</label>
                     <select
-                    value={stateCode}
-                    onChange={(e)=>{setStateCode(e.target.value)}}
+                    value={courtcode}
+                    onChange={(e)=>{setCourtcode(e.target.value)}}
                       name="caseStatus"
                       className="bg-[#060125] text-[#676767] p-2 rounded w-full"
                     >
                       <option>Choose Bench</option>
-                      <option>Pending</option>
-                      <option>Disposed</option>
+                      {courts.map((option, optionIndex)=>{
+                        <option value="">{option.benches}</option>
+                      })}
                     </select>
                   </div>
                   <div className="mb-4">

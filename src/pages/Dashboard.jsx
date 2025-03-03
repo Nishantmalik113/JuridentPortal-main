@@ -163,7 +163,7 @@ function Dashboard() {
                 >
                   <AppWindow className="w-8 h-8 text-blue-400" />
                   <div className="flex-1 justify-center text-center">
-                    <span>Cases</span>
+                    <span>Find Cases</span>
                   </div>
                 </Link>
               </div>
