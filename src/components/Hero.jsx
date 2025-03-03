@@ -23,8 +23,8 @@ export default function Hero() {
       <Header/>
       
       <section className= 'min-h-screen overflow-hidden flex flex-col bg-[#060223] items-center justify-center hero relative'>
-        <div className="background-circle circle-1 z-0"></div>
-        <div className="background-circle circle-2 z-0"></div>
+      <img src="../ellipse-top.png" className='absolute rotate-27 right-[-25vw] top-[-20vh] sm:right-[-150px] sm:top-[-200px] z-102' alt="" />
+      <img src="../ellipse-bottom.png" className='absolute sm:bottom-[-300px] bottom-[-20vh]' alt="" />
         <img src="../JURIDENT.png" className='absolute opacity-0 sm:opacity-[1] left-5' alt="" />
         <div ref={refContainer} className='carousel snap-x snap-mandatory relative items-center mx-20'>
             <div className='Carousel_card snap-center flex flex-col items-center' >

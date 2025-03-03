@@ -25,14 +25,14 @@ const Register = () => {
       )}
 
       {/* Container for Image & Form (Centers content on large screens) */}
-      <div className="grid sm:grid-cols-3 items-center justify-center">
+      <div className="sm:grid sm:grid-cols-3 items-center justify-center z-10">
         {/* Image Section */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full">
           <img src='../LawyerImage.png' alt="Lawyer" className=" w-[150px]" />
         </div>
 
         {/* Form Section */}
-        <div className="flex flex-col gap-5 text-center w-full col-span-2 z-10">
+        <div className="flex flex-col gap-5 text-center w-full col-span-2">
           <h1 className="text-[#C99F4A] text-5xl font-bold mb-3">Welcome to Jurident!</h1>
           <div className="flex flex-col gap-5 text-center w-full px-10">
             <div className="grid grid-cols-2 gap-4 px-10 justify-center">

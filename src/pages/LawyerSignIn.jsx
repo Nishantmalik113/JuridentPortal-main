@@ -48,10 +48,10 @@ function LawyerSignIn() {
       <img src="../JURIDENT.png" className='absolute opacity-0 sm:opacity-[1] left-5' alt="" />
       <img src="../Jurident-Logo-bottom.png" className='absolute opacity-0 sm:opacity-[1] right-5 bottom-5' alt="" />
           {/* Main Container */}
-          <div className="grid grid-cols-3 gap-10 pt-14 items-center justify-center p-4 z-10">
+          <div className="sm:grid sm:grid-cols-3 gap-10 pt-14 items-center justify-center p-4 z-10">
             
             {/* Lawyer Image */}
-            <div className="">
+            <div className="flex flex-col items-center justify-center">
               <img src='../LawyerImage.png' alt="Lawyer" className="" />
             </div>
     

@@ -156,6 +156,17 @@ function Dashboard() {
                   </div>
                 </Link>
               </div>
+              <div className="pl-7 pr-7">
+              <Link
+                  to="/Cases"
+                  className="bg-gray-800 rounded-lg md:px-6 md:py-6 flex items-center space-x-4 hover:bg-gray-700 transition w-full"
+                >
+                  <AppWindow className="w-8 h-8 text-blue-400" />
+                  <div className="flex-1 justify-center text-center">
+                    <span>Cases</span>
+                  </div>
+                </Link>
+              </div>
             </div>
           </section>
         </div>

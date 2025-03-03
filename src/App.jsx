@@ -35,6 +35,7 @@ import EmailVerification from './pages/EmailVerification';
 import ForgotPassword from './pages/ForgotPassword';
 import TasksEvents from './pages/TasksEvents'
 import { useAuth } from './context/AuthContext';
+import Cases from './pages/Cases';
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
         <Route path="/ForgotPassword" element={<ForgotPassword />} />
         <Route path="/EmailVerification" element={<EmailVerification />} /> 
         <Route path="/tasksevents" element={<TasksEvents />} />
+        <Route path="/Cases" element={<Cases />} />
       </Routes>
     </Router>
   );

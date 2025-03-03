@@ -75,9 +75,9 @@ function ClientSignUp() {
       <img src="../ellipse-bottom.png" className='absolute sm:bottom-[-300px] bottom-[-20vh]' alt="" />
       <img src="../JURIDENT.png" className='absolute opacity-0 sm:opacity-[1] left-5' alt="" />
       <img src="../Jurident-Logo-bottom.png" className='absolute opacity-0 sm:opacity-[1] right-5 bottom-5' alt="" />
-      <div className="grid grid-cols-3 gap-10 pt-14 items-center justify-center text-black p-4">
+      <div className="sm:grid sm:grid-cols-3 gap-10 pt-14 items-center justify-center text-black p-4 z-10">
         {/* Image container - visible on both screen sizes */}
-        <div>
+        <div className='flex flex-col items-center justify-center'>
           <img 
             src='../LawyerImage.png' 
             alt="Lawyer" 
@@ -85,7 +85,7 @@ function ClientSignUp() {
           />
         </div>
         
-        <div className="w-full col-span-2 max-w-xs p-5 z-10 ">
+        <div className="w-full col-span-2 max-w-xs p-5 ">
           <h2 className="text-3xl font-semibold text-[#C99F4A] text-center">Sign Up</h2>
           <p className="text-center text-gray-300 mt-2">
             Are you ready to become a legal eagle? Login to the app and spread your wings in the courtroom.
